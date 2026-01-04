@@ -1,0 +1,29 @@
+{
+  "name": "finance-tracker",
+  "version": "1.0.0",
+  "description": "A personal finance tracker application for interview preparation",
+  "main": "server/index.js",
+  "scripts": {
+    "server": "node server/index.js",
+    "client": "cd client && npm run dev",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "install-all": "npm install && cd client && npm install"
+  },
+  "keywords": [
+    "finance",
+    "tracker",
+    "react",
+    "nodejs"
+  ],
+  "author": "Intern",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mongoose": "^9.1.1",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
